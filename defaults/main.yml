@@ -1,0 +1,9 @@
+---
+# defaults file for ansible-role-openstack-horizon
+
+## openstack public config
+# openstack_controller_host: ""
+# openstack_memcached_servers: ""
+
+horizon_memcached_servers: "{{ openstack_memcached_servers }}"
+horizon_openstack_keystone_default_role: "user"

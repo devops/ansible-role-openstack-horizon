@@ -1,0 +1,8 @@
+---
+# tasks file for horizon install on RedHat
+
+- name: Install OpenStack horizon packages.
+  yum:
+    name: "{{ item }}"
+    state: installed
+  with_items: "{{ horizon_packages }}"

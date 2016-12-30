@@ -1,0 +1,9 @@
+---
+# handlers file for ansible-role-openstack-horizon
+
+- name: restart horizon
+  service:
+    name: "{{ item }}"
+    state: restarted
+  with_items:
+    - "{{ horizon_system_service_name }}"
