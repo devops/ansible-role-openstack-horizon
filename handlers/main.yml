@@ -3,7 +3,10 @@
 
 - name: restart horizon
   service:
-    name: "{{ item }}"
+    name: "{{ horizon_system_service_name }}"
     state: restarted
-  with_items:
-    - "{{ horizon_system_service_name }}"
+
+- name: restart memcached
+  service:
+    name: memcached
+    state: restarted

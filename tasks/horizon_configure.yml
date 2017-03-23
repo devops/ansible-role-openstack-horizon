@@ -5,4 +5,6 @@
   template:
     src: horizon_local_settings.j2
     dest: "{{ horizon_local_settings_location }}"
-  notify: restart horizon
+  notify:
+    - restart horizon
+    - restart memcached

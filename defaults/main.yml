@@ -6,4 +6,19 @@
 # openstack_memcached_servers: ""
 
 horizon_memcached_servers: "{{ openstack_memcached_servers }}"
-horizon_openstack_keystone_default_role: "user"
+horizon_keystone_default_role: "user"
+horizon_keystone_multidomain_support: "False"
+horizon_secret_key: 3c23c5824d88d1bdb154
+
+# Enable optional services provided by neutron
+horizon_enable_router: False
+horizon_enable_quotas: False
+horizon_enable_ipv6: False
+horizon_enable_ha_router: False
+horizon_enable_lb: False
+horizon_enable_firewall: False
+horizon_enable_vpn: False
+
+#
+
+horizon_time_zone: "Asia/Shanghai"

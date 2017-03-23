@@ -4,7 +4,6 @@
 horizon_packages:
   - openstack-dashboard
 
-horizon_system_service_name:
-  - httpd
+horizon_system_service_name: httpd
 
 horizon_local_settings_location: /etc/openstack-dashboard/local_settings
